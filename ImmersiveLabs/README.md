@@ -22,6 +22,8 @@ Below are my Write ups from some of the labs that I have completed.
 
 [Snort](https://immersivelabs.online/browse/category/defensive/snort) is a free open-source network intrusion detection system. Developed and updated by Cisco, Snort has the ability to perform packet logging, protocol analysis, content searching, and pattern matching.
 
+![Snort card](./images/SnortLabs.PNG)
+
 [Snort Rules: Ep. 1](./SnortRulesEp1.txt)
 
 [Snort Rules: Ep. 2 - DNS](./SnortRulesEp2.txt)
