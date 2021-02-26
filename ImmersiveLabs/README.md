@@ -18,6 +18,9 @@ Below are my Write ups from some of the labs that I have completed.
 
 [Space After Filename](./SpaceAfterFilename.txt)
 
+## XSL
+[XSL Script Processing](./XSLScriptProcessing.txt)
+
 ### Snort
 
 [Snort](https://immersivelabs.online/browse/category/defensive/snort) is a free open-source network intrusion detection system. Developed and updated by Cisco, Snort has the ability to perform packet logging, protocol analysis, content searching, and pattern matching.
@@ -30,5 +33,10 @@ Below are my Write ups from some of the labs that I have completed.
 
 [Snort Rules: Ep. 3 - HTTP](./SnortRulesEp2.txt)
 
-## XSL
-[XSL Script Processing](./XSLScriptProcessing.txt)
+## Metasploit
+
+[Metasploit](https://immersivelabs.online/browse/category/infrastructure-hacking/metasploit?category=offensive)
+
+![Metaploit card](./images/MetasploitLabs.PNG)
+
+[Msfvenom](./Msfvenom.txt)
