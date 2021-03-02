@@ -17,23 +17,23 @@ Below are my Write ups from some of the labs that I have completed.
 
 ## Lab Write ups 
 
-[Space After Filename](./SpaceAfterFilename.txt)
-[National Software Reference Library (NSRL)](ImmersiveLabs\NationalSoftwareReferenceLibrary.txt)
+- [Space After Filename](./SpaceAfterFilename.md)
+- [National Software Reference Library (NSRL)](ImmersiveLabs\NationalSoftwareReferenceLibrary.md)
 
 ## XSL
-[XSL Script Processing](./XSLScriptProcessing.txt)
+[XSL Script Processing](./XSLScriptProcessing.md)
 
-### Snort
+## Snort
 
 [Snort](https://immersivelabs.online/browse/category/defensive/snort) is a free open-source network intrusion detection system. Developed and updated by Cisco, Snort has the ability to perform packet logging, protocol analysis, content searching, and pattern matching.
 
 ![Snort card](./images/SnortLabs.PNG)
 
-[Snort Rules: Ep. 1](./SnortRulesEp1.txt)
+[Snort Rules: Ep. 1](./SnortRulesEp1.md)
 
-[Snort Rules: Ep. 2 - DNS](./SnortRulesEp2.txt)
+[Snort Rules: Ep. 2 - DNS](./SnortRulesEp2.md)
 
-[Snort Rules: Ep. 3 - HTTP](./SnortRulesEp2.txt)
+[Snort Rules: Ep. 3 - HTTP](./SnortRulesEp2.md)
 
 ## Metasploit
 
@@ -41,8 +41,8 @@ Below are my Write ups from some of the labs that I have completed.
 
 ![Metaploit card](./images/MetasploitLabs.PNG)
 
-[Msfvenom](./Msfvenom.txt)
+[Msfvenom](./Msfvenom.md)
 
 ## Splunk
 
-[Intro to Splunk](./IntroToSplunk.txt)
+[Intro to Splunk](./IntroToSplunk.txt) {WIP}
