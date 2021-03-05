@@ -45,4 +45,4 @@ Below are my Write ups from some of the labs that I have completed.
 
 ## Splunk
 
-[Intro to Splunk](./IntroToSplunk.txt) {WIP}
+[Intro to Splunk](./IntroToSplunk.md) 
