@@ -55,6 +55,9 @@ x   immersivelabs.co.uk
 
 ### Question 5
 Search the ‘countries’ file for all the words containing exactly nine characters. How many results are found?
+12
+
+![Regex Number Countries](./images/RegexNumCountries.PNG)
 
 
 ### Question 6
@@ -64,3 +67,9 @@ Search the ‘countries’ file for all the words with nine characters and the l
 ### Question 7
 Search the ‘countries’ file for all the words containing nine characters and the letters 'i' and 'e'. How many results are found?
 
+
+{WIP}
+grep -E '(\w|\s){9}' regex.txt | grep -E 'i'
+grep -E '(\w|\s){9}' regex.txt | grep -E 'i' | grep -E '\w+(\s\w+)*'
+
+grep -E '^*+[i]+*.{9}' countries

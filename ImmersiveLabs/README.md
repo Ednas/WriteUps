@@ -5,6 +5,7 @@
 * [Snort](#snort)
 * [Metapsploit](#metasploit)
 * [Splunk](#splunk)
+* [Passwords](#passwords)
 
 ## About
 
@@ -35,6 +36,14 @@ Below are my Write ups from some of the labs that I have completed.
 
 [Snort Rules: Ep. 3 - HTTP](./SnortRulesEp2.md)
 
+## Burp Suite
+
+[Burp Suite](https://immersivelabs.online/browse/category/offensive/burp-suite)  is a popular tool used for pen testing and assessing web application security. This skill series will take you from the basics of configuring and using Burp Suite through to expertly traversing and applying its range of tools and features.
+
+![Burp card](./images/BurpLabs.PNG)
+
+[Burp Suite Basics HTTP](./BurpSuiteBasicsHTTP.md)
+
 ## Metasploit
 
 [Metasploit](https://immersivelabs.online/browse/category/infrastructure-hacking/metasploit?category=offensive)
@@ -46,3 +55,13 @@ Below are my Write ups from some of the labs that I have completed.
 ## Splunk
 
 [Intro to Splunk](./IntroToSplunk.md) 
+
+## Passwords
+
+[Password Hashes II](./PasswordHashesII.md)
+[Hydra: Brute Force](./HydraBruteForce.md)
+
+
+WIP
+Regex.md
+HydraBruteForce.md
