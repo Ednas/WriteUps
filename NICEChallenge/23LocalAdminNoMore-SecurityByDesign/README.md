@@ -18,6 +18,8 @@ Recently we have become aware of a security risk that our current windows workst
 
 Starting off, I have the following machines available for me to access and checks left to complete
 
+TODO FILL OUT INFO HERE
+![Das Sec Group](./images/DasSecGroup.PNG)
 ![VMsAvailable](./images/VMsAvailableAndChecks.PNG)
 
 I was given the following Network diagram map
