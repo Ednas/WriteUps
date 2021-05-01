@@ -62,13 +62,15 @@ Search the ‘countries’ file for all the words containing exactly nine charac
 
 ### Question 6
 Search the ‘countries’ file for all the words with nine characters and the letter 'i'. How many results are found?
-
+10
 
 ### Question 7
 Search the ‘countries’ file for all the words containing nine characters and the letters 'i' and 'e'. How many results are found?
+4
 
 
-{WIP}
+
+Commands that I've tried
 grep -E '(\w|\s){9}' regex.txt | grep -E 'i'
 grep -E '(\w|\s){9}' regex.txt | grep -E 'i' | grep -E '\w+(\s\w+)*'
 
