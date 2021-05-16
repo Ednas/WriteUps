@@ -63,15 +63,56 @@ I was given the following Network diagram map
 
 ![OM-map](./images/OM-map.jpg)
 
+#### The tasks that I was working on completing were
+ - External Media Lockdown Policy
+ - External Media Time to Force Reboot Policy
+ - Disable Network Drive Mapping Controls Policy
+ - Remove Run Utility in Start Menu Policy
 
+### For the first task "External Media Lockdown Policy"
+I went to the Group Policy Managment Editor. 
+Policies > Administrative Templates: Policy Definitions > Systems > Removable Storage Access.
 
+Then I right clicked on All Removable Storage Classes: Deny all access.
+On the radio button, I selected "Enabled", clicked Apply, then OK.
 
+![All Removable Storage Classes](./images/1AllRemovableStorageClasses.PNG)
 
+### For the second task "External Media Time to Force Reboot Policy"
+Staying on the same window in the Group Policy Management Editor.
+The top item "Time (in seconds) to force reboot, I right clicked on it. Then selected "Enabled" from the radio button, then under options, using the arrow, edited the "Time (in seconds)" to 360. Clicked Apply, then ok.
 
+![Time In Seconds](./images/1TimeInSec.PNG)
+
+Once those settings are completed, the Removable Storage Access in Group Policy will look like this:
+
+![External Media](./images/2ExternalMediaTimeToForceReboot.PNG)
+
+### For the third task "Disable Network Drive Mapping Controls Policy"
+I went to the Group Policy Managment Editor. 
+Policies > Administrative Templates: Policy Definitions > Windows Explorer > Remove "Map Network Drive" and "Disconnect Network Drive"
+
+![Windows Explorer](./images/3GroupPolicyTree.PNG)
+
+Then I right clicked on Remove "Map Network Drive" and "Disconnect Network Drive".
+On the radio button, I selected "Enabled", clicked Apply, then OK. This Disabled the Network Drive Mapping.
+
+![Disable](./images/3Disable.PNG)
+
+### For the fourth task "Remove Run Utility in Start Menu Policy"
+I went to the Group Policy Managment Editor. 
+Policies > User Configuration > Policies > Start Menu and Taskbar > Remove Run menu from Start Menu
+
+![Remove Run](./images/4RemoveRun.PNG)
+
+Then I right clicked on Remove Run menu from Start Menu.
+On the radio button, I selected "Enabled", clicked Apply, then OK. This removes the Run menu and the Run utility.
+
+![User Config](./images/4UserConfig.PNG)
 
 Once all of these steps were completed, I had finished my task, which I was able to verify by the green checkmarks next to the required tasks.
 
-![Green Checkmarks](./images/NICEChallengeSubmissions.PNG) 
+![Green Checkmarks](./images/NICEChallengeSubmission.PNG) 
 
 ### NICE Framework KSA
 K0002. Knowledge of risk management processes (e.g., methods for assessing and mitigating risk).
