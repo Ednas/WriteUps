@@ -16,3 +16,9 @@ Below are my Write ups from some of the labs that I have completed.
 [17 Interns & HR on the Domain Controller](./17InternsAndHROnTheDomainController/README.md)
 
 [18 Linux Administration](./18LinuxAdministration201/README.md)
+
+[23 Local Admin No More](./23LocalAdminNoMore-SecurityByDesign/README.md)
+
+[25 Dangerous Drives](./25DangerousDrives/README.md)
+
+[26 Insider Threat](./26InsiderThreat/README.md)
