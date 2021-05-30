@@ -51,6 +51,18 @@ Kali comes with a good password list. You should be able to find it in /usr/shar
 
 
 ---
+## Tools used
+
+- scp
+- tr
+- hydra
+- SMB
+- Powershell
+- Bash
+- Active Director
+- AD Server Manager
+- LDAP
+
 ## Steps taken to complete the required actions
 
 Starting off, I have the following machines available for me to access and checks left to complete

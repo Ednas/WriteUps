@@ -1,4 +1,4 @@
-# Challenge 26  Insider Threat: Domain Lockdown Incoming 
+# Challenge 25 Insider Threat: Domain Lockdown Incoming 
 
 ## Author
 Edna J.
