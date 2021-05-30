@@ -102,7 +102,7 @@ The following were the commands that helped me solve this challenge
 
 `tr -d '"' < correctADList.txt > GoodAD.txt`
 
-![Translate delete command](./images/TRCommand.PNG)
+![Translate delete command](./images/TRCommand.png)
 
 `nano GoodAD.txt`
 ![Nano command](./images/USers.PNG)
