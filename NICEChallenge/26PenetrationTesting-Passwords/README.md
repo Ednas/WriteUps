@@ -84,7 +84,13 @@ My first mission was to find out who the users are that exist on the Domain Cont
 
 To create the list of AD Users on the Domain Controller. I referenced the Microsoft Documentation for the [GET-ADUser](https://docs.microsoft.com/en-us/powershell/module/activedirectory/get-aduser?view=windowsserver2019-ps)
 
-Moved to the Security-Desk, I used SCP to copy that list of users to the Security Desk.
+`import-module ActiveDirectory`
+
+`GET-ADUser -Filter * | Export-Csv name.txt`
+
+This creates a list of the AD users in a CSV format (instead of Powershell format) and saved it to a file called name.txt.
+
+In my next step, I moved to the Security-Desk, I used SCP to copy that list of users to the Security Desk.
 
 Once I had a list of users, I cleaned that list up with the Translate command and using nano to remove extraneous users and spaces.
 
