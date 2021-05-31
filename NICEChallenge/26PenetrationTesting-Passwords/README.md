@@ -141,30 +141,29 @@ Once all of these steps were completed, I had finished my task, which I was able
 ![Green Checkmarks](./images/NICEChallengeSubmission.PNG) 
 
 ### NICE Framework KSA
-A0123. Ability to apply cybersecurity and privacy principles to organizational requirements (relevant to confidentiality, integrity, availability, authentication, non-repudiation).
-K0002. Knowledge of risk management processes (e.g., methods for assessing and mitigating risk).
-K0003. Knowledge of laws, regulations, policies, and ethics as they relate to cybersecurity and privacy.
-K0004. Knowledge of cybersecurity and privacy principles.
-K0005. Knowledge of cyber threats and vulnerabilities.
-K0009. Knowledge of application vulnerabilities.
-K0044. Knowledge of cybersecurity and privacy principles and organizational requirements (relevant to confidentiality, integrity, availability, authentication, non-repudiation).
-K0167. Knowledge of system administration, network, and operating system hardening techniques.
-K0206. Knowledge of ethical hacking principles and techniques.
-K0342. Knowledge of penetration testing principles, tools, and techniques.
-S0044. Skill in mimicking threat behaviors.
-S0051. Skill in the use of penetration testing tools and techniques.
+- A0123. Ability to apply cybersecurity and privacy principles to organizational requirements (relevant to confidentiality, integrity, availability, authentication, non-repudiation).
+- K0002. Knowledge of risk management processes (e.g., methods for assessing and mitigating risk).
+- K0003. Knowledge of laws, regulations, policies, and ethics as they relate to cybersecurity and privacy.
+- K0004. Knowledge of cybersecurity and privacy principles.
+- K0005. Knowledge of cyber threats and vulnerabilities.
+- K0009. Knowledge of application vulnerabilities.
+- K0044. Knowledge of cybersecurity and privacy principles and organizational requirements (relevant to confidentiality, integrity, availability, authentication, non-repudiation).
+- K0167. Knowledge of system administration, network, and operating system hardening techniques.
+- K0206. Knowledge of ethical hacking principles and techniques.
+- K0342. Knowledge of penetration testing principles, tools, and techniques.
+- S0044. Skill in mimicking threat behaviors.
+- S0051. Skill in the use of penetration testing tools and techniques.
 
 ### CAE Knowledge Units
-Cybersecurity Ethics
-Cybersecurity Foundations
-Cybersecurity Planning and Management
-Cybersecurity Principles
-Cyber Threats
-Penetration Testing
-Policy, Legal, Ethics, and Compliance
-Privacy
-Web Application Security
-
+* Cybersecurity Ethics
+* Cybersecurity Foundations
+* Cybersecurity Planning and Management
+* Cybersecurity Principles
+* Cyber Threats
+* Penetration Testing
+* Policy, Legal, Ethics, and Compliance
+* Privacy
+* Web Application Security
 
 ## References:
 
