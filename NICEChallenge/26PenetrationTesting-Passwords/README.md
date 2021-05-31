@@ -99,7 +99,7 @@ With this list, I used Hydra to brute-force the user's credentials. I tried SMB,
 The following were the commands that helped me solve this challenge
 
 `scp playerone@172.16.30.55:C:/Users/playerone/name.txt list.txt`
-![SCP Command](./images/SCPCommand1.PNG)
+![SCP Command](./images/SCPCommand1.png)
 
 `cat lists.txt`
 
@@ -128,7 +128,7 @@ After I discovered that the users who needed to have their passwords updated, wh
 ![ADUsers](./images/AccountNeverExpires.PNG)
 I made sure to uncheck "Password never expires"
 
-![ADUsers](./images/ADUsers.PNG)
+![ADUsers](./images/ADUSers.PNG)
 
 Next I checked the box "User must change password at next login"
 
