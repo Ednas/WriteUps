@@ -1,4 +1,4 @@
-# Challenge NUM  NAME OF CHALLENGE
+# Challenge 27 Executable Excavation
 
 ## Author
 Edna J.

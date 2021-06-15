@@ -26,6 +26,8 @@ Below are my Write ups from some of the labs that I have completed.
 
 [26 Penetration Testing: Bringing Passwords Up To Snuff](./26PenetrationTesting-Passwords/README.md)
 
+[27 Executable Excavation](./27ExecutableExcavation/README.md)
+
 ### WGU NICE Cyber Challenges Schedule 
 May - September 2021
 
