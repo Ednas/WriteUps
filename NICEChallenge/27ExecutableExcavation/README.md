@@ -1,10 +1,10 @@
 # Challenge 27 Executable Excavation
 
 ## Author
-Edna J.
-WGU NICE Challenge
-Pretty Safe Electronics
-June 13, 2021
+    Edna J.
+    WGU NICE Challenge
+    Pretty Safe Electronics
+    June 13, 2021
 
 ## Challenge Details
 
