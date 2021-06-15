@@ -3,8 +3,8 @@
 ## Author
 Edna J.
 WGU NICE Challenge
-SYSTEM
-DATE
+Pretty Safe Electronics
+June 13, 2021
 
 ## Challenge Details
 
