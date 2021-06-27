@@ -1,10 +1,12 @@
 # Challenge 25 Insider Threat: Domain Lockdown Incoming 
 
+![Domain](../Event/NICEChallenge25.png)
+
 ## Author
-Edna J.
-WGU NICE Challenge
-DAS Web, Inc.
-May 16, 2021
+    Edna J.
+    WGU NICE Challenge
+    DAS Web, Inc.
+    May 16, 2021
 
 ## Challenge Details
 Author: Jeff Echlin

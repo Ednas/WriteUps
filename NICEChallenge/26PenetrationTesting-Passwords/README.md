@@ -1,10 +1,10 @@
 # Challenge 26  Penetration Testing: Bringing Passwords Up To Snuff
 
 ## Author
-Edna J.
-WGU NICE Challenge
-DAS Web, Inc.
-May 30, 2021
+    Edna J.
+    WGU NICE Challenge
+    DAS Web, Inc.
+    May 30, 2021
 
 ## Challenge Details
 Author: Bailey Kasin

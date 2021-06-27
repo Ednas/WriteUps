@@ -1,5 +1,7 @@
 # Challenge 27 Executable Excavation
 
+![Executable](../Event/NICE27.png)
+
 ## Author
     Edna J.
     WGU NICE Challenge

@@ -1,10 +1,12 @@
 # Challenge 24 Dangerous Drives
 
+![Dangerous](../Event/DangerousDrives.png)
+
 ## Author
-Edna J.
-WGU NICE Challenge
-DAS Web, Inc.
-May 1, 2021
+    Edna J.
+    WGU NICE Challenge
+    DAS Web, Inc.
+    May 1, 2021
 
 ## Challenge Details
 Dangerous Drives
