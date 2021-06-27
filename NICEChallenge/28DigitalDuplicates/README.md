@@ -7,7 +7,10 @@ DASWebs Inc.
 June 27, 2021
 
 ## Challenge Details
-
+Framework Category: Investigate
+Specialty Area: Digital Forensics
+Work Role: Law Enforcement/CounterIntelligence Forensics
+Task Description: Create a forensically sound duplicate of the evidence (i.e., forensic image) that ensures the original evidence is not unintentionally modified, to use for data recovery and analysis processes. This includes, but is not limited to, hard drives, floppy diskettes, CDs, PDAs, mobile phones, GPS, and all tape formats. (T0048)
 
 ### Scenario
 Recently Gary Thatcher our senior system administrator, came across a thumb drive attached to an employee's system. According to the employee, the thumb drive was attached without their consent and they are unsure of the origin of said drive. The drive was passed to Ione Leventis one of our security analysts. Ione has attached the drive to our sheep-dip system which in our case is the Security-Desk machine. However, Ione was called away on other matters and you are now entrusted with the task. According to current company policy the thumb drive must be inspected for any malicious agents that could threaten DAS Web's overall security. Your job is to create a forensically sound duplicate image of the thumb drive using dcfldd so it can be examined without the risk of inadvertently modifying potential evidence. SHA512 hashes should also be taken and compared between the original thumb drive which is already attached, but not mounted, to the system and the forensic image.
@@ -18,37 +21,71 @@ Recently Gary Thatcher our senior system administrator, came across a thumb driv
 ![Meeting Info](./images/Meeting.PNG)
 
 
-
-
 ---
 ## Tools used
 
- - List item 1
- - List item 2
- - List item 3
+ - dcfldd
+ - Kali
+ - SHA512
 
 
 ## Steps taken to complete the required actions
 
 Starting off, I have the following machines available for me to access and checks left to complete
 
-![VMsAvailable](./images/VMs-available.PNG)
+![VMsAvailable](./images/VMsAvailable.PNG)
 
 I was given the following Network diagram map
 
 ![OM-map](./images/OM-map.jpg)
 
 #### The tasks that I was working on completing were
- - List item 1
- - List item 2
- - List item 3
+1. Use dcfldd to make a forensically sound image and hash of the thumb drive
+
+2. Store the image in /forensicimages/forensicimage.dd
+
+3. Take a SHA512 hash of the thumb drive and compare it to the hash originally created with dcfldd.
 
 
-### Task 1 Heading
+### Task 1 Use dcfldd to make a forensically sound image and hash of the thumb drive
 
-### Task 2 Heading
+The first thing that I did was try to get familiar with the tool that was requested that I use for this task. I checked the man pages and googled the tool to read the online documentaion. I was able to find that this command `dcfldd` has a lot of options available. With that much information, I went and searched for a write up for the best way to complete the tasks I needed with this tool. I came across the blog [Imaging Using dcfldd](https://dfir.blog/imaging-using-dcfldd/) on DFIR.blog's webpage. This was an excellent blog to follow for this task.
+
+The commands that I ran were:
+
+```dcfldd man```
+
+```ls -lha /dev | grep sd```
+![Grep](./images/SecDeskGrepSD.PNG)
+
+Seeing the results of the grep command, I was able to figure out that sda is the main drive, which makes sdb the flashdrive. With this information, I know that my target for imaging is /dev/sdb
+
+The task required me to save the imaged file to a folder called forensicimages, I created that directory. 
+```cd /```
+```sudo mkdir /forensicimages```
 
 
+### Task 2 Store the image in /forensicimages/forensicimage.dd
+
+Using the dcfldd command, I created the forensic image and saved the hashlog to a text file.
+
+```sudo dcfldd if=/dev/sdb of=/forensicimages/forensicimage.dd hash=sha512 hashlog=/forensicimages/forensicimage.txt```
+
+![Forensics](./images/SecDeskForensicImageCreation.PNG)
+
+### Task 3 Take a SHA512 hash of the thumb drive and compare it to the hash originally created with dcfldd
+
+Using the vf option dcfldd command I'm able to verify that the original file and the forensic image have the same hash and that they match.
+
+```dcfldd if=/dev/sdb vf=/forensicimages/forensicimage.dd verifylog=/forensicimages/forensicimage.txt```
+
+![SHA512](./images/SecDeskVerifySHA512.PNG)
+
+
+## Caveats
+If you're working through this challenge and running into issues, the following might be the issue.
+- You mounted the drive, this would make changes to the hash
+- You used one of the partials, ex. sdb1 instead of the whole drive sdb
 
 
 (Get this info before deploying challenge or after)
@@ -96,3 +133,6 @@ I was given the following Network diagram map
 
 ## References:
 
+https://dfir.blog/imaging-using-dcfldd/
+
+https://www.computerhope.com/unix/sha512sum.htm
