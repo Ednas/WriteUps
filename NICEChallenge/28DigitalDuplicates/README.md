@@ -21,7 +21,7 @@ Recently Gary Thatcher our senior system administrator, came across a thumb driv
 -----
 ## Meeting Briefing
 
-![Meeting Info](./images/Meeting.PNG)
+![Meeting Info](./images/meeting.PNG)
 
 
 ---
