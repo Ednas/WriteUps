@@ -1,10 +1,13 @@
 # Challenge 28 Digital Duplicates
 
+
+![DigitalDupes](../Event/NICE28.png)
+
 ## Author
-Edna J.
-WGU NICE Challenge
-DASWebs Inc.
-June 27, 2021
+    Edna J.
+    WGU NICE Challenge
+    DASWebs Inc.
+    June 27, 2021
 
 ## Challenge Details
 Framework Category: Investigate

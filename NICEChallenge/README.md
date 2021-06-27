@@ -28,6 +28,9 @@ Below are my Write ups from some of the labs that I have completed.
 
 [27 Executable Excavation](./27ExecutableExcavation/README.md)
 
+[28 Digital Duplicates](./28DigitalDuplicates/README.md)
+
+
 ### WGU NICE Cyber Challenges Schedule 
 May - September 2021
 
