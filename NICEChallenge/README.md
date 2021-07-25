@@ -30,6 +30,10 @@ Below are my Write ups from some of the labs that I have completed.
 
 [28 Digital Duplicates](./28DigitalDuplicates/README.md)
 
+[29 Properly Prioritized Web Watching](./29ProperlyPrioritizedWebWatching/README.md)
+
+[30 Conflict In the Config](./30ConflictInTheConfig/README.md)
+
 
 ### WGU NICE Cyber Challenges Schedule 
 May - September 2021

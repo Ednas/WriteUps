@@ -117,20 +117,20 @@ Once all of these steps were completed, I had finished my task, which I was able
 ![Green Checkmarks](./images/NICEChallengeSubmission.PNG) 
 
 ### NICE Framework KSA
-K0002. Knowledge of risk management processes (e.g., methods for assessing and mitigating risk).
-K0004. Knowledge of cybersecurity and privacy principles.
-K0005. Knowledge of cyber threats and vulnerabilities.
-K0036. Knowledge of human-computer interaction principles.
-K0044. Knowledge of cybersecurity and privacy principles and organizational requirements (relevant to confidentiality, integrity, availability, authentication, non-repudiation).
-K0056. Knowledge of network access, identity, and access management (e.g., public key infrastructure, Oauth, OpenID, SAML, SPML).
-K0060. Knowledge of operating systems.
-K0263. Knowledge of information technology (IT) risk management policies, requirements, and procedures.
-K0276. Knowledge of security management.
-K0297. Knowledge of countermeasure design for identified security risks.
+- K0002. Knowledge of risk management processes (e.g., methods for assessing and mitigating risk).
+- K0004. Knowledge of cybersecurity and privacy principles.
+- K0005. Knowledge of cyber threats and vulnerabilities.
+- K0036. Knowledge of human-computer interaction principles.
+- K0044. Knowledge of cybersecurity and privacy principles and organizational requirements (relevant to confidentiality, integrity, availability, authentication, non-repudiation).
+- K0056. Knowledge of network access, identity, and access management (e.g., public key infrastructure, Oauth, OpenID, SAML, SPML).
+- K0060. Knowledge of operating systems.
+- K0263. Knowledge of information technology (IT) risk management policies, requirements, and procedures.
+- K0276. Knowledge of security management.
+- K0297. Knowledge of countermeasure design for identified security risks.
 
 ### CAE Knowledge Units
-Cybersecurity Foundations
-IT Systems Components
-Operating Systems Concepts
-Operating Systems Hardening
-Windows System Administration
+- Cybersecurity Foundations
+- IT Systems Components
+- Operating Systems Concepts
+- Operating Systems Hardening
+- Windows System Administration

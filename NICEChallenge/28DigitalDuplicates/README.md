@@ -1,7 +1,7 @@
 # Challenge 28 Digital Duplicates
 
 
-![DigitalDupes](../Event/NICE28.png)
+![DigitalDupes](../Event/NICE28a.png)
 
 ## Author
     Edna J.
@@ -139,3 +139,8 @@ If you're working through this challenge and running into issues, the following 
 https://dfir.blog/imaging-using-dcfldd/
 
 https://www.computerhope.com/unix/sha512sum.htm
+
+
+## Note:
+This challenge also had this alternative flyer
+![DigitalDupes](../Event/NICE28.png)
