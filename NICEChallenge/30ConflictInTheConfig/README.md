@@ -82,16 +82,18 @@ I was given the following Network diagram map
 ![OM-map](./images/PD-map.jpg)
 
 #### The tasks that I was working on completing were
- - List item 1
- - List item 2
- - List item 3
+ - Check Joomla Prod logs
+ - Check Firewall rules
+ - Disable SNORT rule that is causing problem
 
 
-### Task 1 Heading
+### Task 1 Check Joomla Prod logs
 
-### Task 2 Heading
+Based on what Ashley told me during the meeting, "Check out what's running on Prod-Joomla. There has to be some process that's running inefficiently or something." I decide to start by checking on Prod-Joomla. My first thought is to look into the logs and see what has been happening. 
 
+### Task 2 Check Firewall rules
 
+### Task 3 Disable SNORT rule that is causing problem
 
 
 ### NICE Framework KSA
@@ -124,3 +126,6 @@ I was given the following Network diagram map
 
 ## References:
 
+https://raw.githubusercontent.com/richardforth/apache2buddy/master/apache2buddy.pl
+https://github.com/rackerlabs/recap
+https://github.com/major/MySQLTuner-perl

@@ -22,16 +22,21 @@ Below are my Write ups from some of the labs that I have completed.
 
 [24 Dangerous Drives (Complexity 1)](./24DangerousDrives/README.md)
 
+![Domain](./Event/NICEChallenge25.png)
 [25 Insider Threat: Domain Lockdown Incoming](./25InsiderThreat/README.md)
 
 [26 Penetration Testing: Bringing Passwords Up To Snuff](./26PenetrationTesting-Passwords/README.md)
 
+![Executable](./Event/NICE27.png)
 [27 Executable Excavation](./27ExecutableExcavation/README.md)
 
+![DigitalDupes](./Event/NICE28a.png)
 [28 Digital Duplicates](./28DigitalDuplicates/README.md)
 
+![Properly](./Event/NICE29.png)
 [29 Properly Prioritized Web Watching](./29ProperlyPrioritizedWebWatching/README.md)
 
+![Config](./Event/NICE30.png)
 [30 Conflict In the Config](./30ConflictInTheConfig/README.md)
 
 

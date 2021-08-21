@@ -1,6 +1,5 @@
 # Challenge 28 Digital Duplicates
 
-
 ![DigitalDupes](../Event/NICE28a.png)
 
 ## Author
