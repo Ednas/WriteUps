@@ -1,6 +1,6 @@
 # Challenge 33 - Linux Administration 101: Users, Access & Updates
 
-![Linux](../Event/NICEC32.png)
+![Linux](../Event/NICE32.png)
 
 ## Author
 ```
