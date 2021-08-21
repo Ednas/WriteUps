@@ -39,6 +39,11 @@ Below are my Write ups from some of the labs that I have completed.
 ![Config](./Event/NICE30.png)
 [30 Conflict In the Config](./30ConflictInTheConfig/README.md)
 
+![Network Anomalies](./Event/NICE31.png)
+
+![Linux101](./Event/NICE32.png)
+[32 Linux Administration 101: Users, Access & Updates](./32LinuxAdministration101/README.md)
+
 
 ### WGU NICE Cyber Challenges Schedule 
 May - September 2021
