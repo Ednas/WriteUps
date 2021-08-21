@@ -53,11 +53,11 @@ Thanks @playerone
 
 
 ---
-## Tools used
+## Commands used
 
- - List item 1
- - List item 2
- - List item 3
+ - useradd
+ - passwd
+ - visudo
 
 
 ## Steps taken to complete the required actions
@@ -76,29 +76,48 @@ I was given the following Network diagram map
  - Run updates
 
 
-### Task 1 Create User Account
+## Task 1 Create User Account
 Sr. Admin Gary Thatcher needs a user account created on the production box.
 Don't forget about the account naming scheme: (First initial and last name, i.e. John Doe = jdoe)
 
 Password should be "Password123"
 
-First thing I did was run the command
-`sudo useradd gthatcher`
- Then to check the user was added, I ran
- `less /etc/passwd`
+First thing I did was run the command `sudo useradd gthatcher`
+
+ Then to check the user was added, I ran `less /etc/passwd` 
 
 ![users](./images/checkUserExists.PNG)
-I see that `gthatcher` has been added to the passwd file. 
 
-Now I'm going to set the password for this user.
+Here I see that `gthatcher` has been added to the passwd file. 
 
+Now I'm going to set the password for this user. I run the command `sudo passwd gthatcher` and then I enter the new password "Password123" and ignore the warning about BAD PASSWORD because I'm using a dictionary word. (Sidenote: Using the dictionary word Password in your password is not a secure practice and we should encourage this user to change their password to a more complex password.)
 
-### Task 2 Set permissions to SUDO / Administrator privileges
+![Passwd](./images/passwd.PNG)
 
+## Task 2 Set permissions to SUDO / Administrator privileges
 
-### Task 3 Run updates
+There's a couple of ways to give a user SUDO privileges. The first one is utilizing the usermod command. This did not work on this machine, so I went to the other way which is to edit the Sudoers file. To do that, run `visudo` which opens up the sudoers file using the vi editor. To use Nano instead, first run `EDITOR=nano visudo`. Once in this file, go to the end, and add the following line:
+
+`gthatcher  ALL=(ALL) NOPASSWD:ALL`
+![Sudoers](./images/EditSudoers.PNG)
+
+## Task 3 Run updates
 Oh, and run updates on that box. It has been a while since that version of the OS was released and there are lots of updates for the base packages. Also, make sure to use the preinstalled system package manager when you update, no built from source updates please...
 
+I ran the command 
+`yum update`
+
+![Update](./images/yumUpdate.PNG)
+
+I let this cook for a while, the computer might go through some reboots and you might have a black screen for a bit, you should be able to click on the black screen and it will show the terminal again.
+
+Once it's finished, the final output should look like this and then you can exit from the computer.
+
+![Complete](./images/yumComplete.PNG)
+
+Now that I've completed all of the required steps I see that all of my checkmarks have turned green.
+
+![green](./images/finalChecks.PNG)
 
 ### NICE Framework KSA
 
@@ -107,6 +126,8 @@ Oh, and run updates on that box. It has been a while since that version of the O
 
 
 ## References:
+How to add a new user in Linux
+https://linuxize.com/post/how-to-create-users-in-linux-using-the-useradd-command/
 
 How to list users in Linux
 https://linuxize.com/post/how-to-list-users-in-linux/
@@ -114,7 +135,8 @@ https://linuxize.com/post/how-to-list-users-in-linux/
 How to change a users password in Linux
 https://www.cyberciti.biz/faq/linux-set-change-password-how-to/
 
-
-
 Add users to Sudoers in Linux
 https://linuxize.com/post/how-to-add-user-to-sudoers-in-ubuntu/
+
+How to do a Linux update
+https://www.linux.com/training-tutorials/linux-101-updating-your-system/
