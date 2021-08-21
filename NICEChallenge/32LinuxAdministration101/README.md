@@ -121,9 +121,22 @@ Now that I've completed all of the required steps I see that all of my checkmark
 
 ### NICE Framework KSA
 
+- K0088. Knowledge of systems administration concepts.
+- K0158. Knowledge of organizational information technology (IT) user security policies (e.g., account creation, password rules, access control).
+- K0167. Knowledge of system administration, network, and operating system hardening techniques.
+- K0318. Knowledge of operating system command-line tools.
+- S0016. Skill in configuring and optimizing software.
+- S0143. Skill in conducting system/server planning, management, and maintenance.
+- S0144. Skill in correcting physical and technical problems that impact system/server performance.
+- S0153. Skill in identifying and anticipating system/server performance, availability, capacity, or configuration problems.
+- S0154. Skill in installing system and component upgrades. (i.e., servers, appliances, network devices).
+- S0158. Skill in operating system administration. (e.g., account maintenance, data backups, maintain system performance, install and configure new hardware/software).
 
 ### CAE Knowledge Units
-
+- Cybersecurity Foundations
+- IT Systems Components
+- Linux System Administration
+- Operating Systems Concepts
 
 ## References:
 How to add a new user in Linux
