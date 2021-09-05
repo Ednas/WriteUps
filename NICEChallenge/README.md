@@ -44,6 +44,14 @@ Below are my Write ups from some of the labs that I have completed.
 ![Linux101](./Event/NICE32.png)
 [32 Linux Administration 101: Users, Access & Updates](./32LinuxAdministration101/README.md)
 
+![Firewalls: Table for Two](./Event/NICE33.png)
+[33 Firewall Update: Tables for Two](./33FirewallUpdate/README.md)
+
+![Systems Security Analyst: Crash Course](./Event/NICE34.png)
+[34 Systems Security Analyst: Crash Course](./34SystemsSecurity/README.md)
+
+![Incoming Zero Day!: Prepare the IDS/IPS!](./Event/NICE35.png)
+[35 Incoming Zero Day!: Prepare the IDS/IPS!](./35IncomingZeroDay/README.md)
 
 ### WGU NICE Cyber Challenges Schedule 
 May - September 2021

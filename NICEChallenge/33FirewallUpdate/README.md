@@ -1,16 +1,26 @@
-# Challenge NUM  NAME OF CHALLENGE
+# Challenge 33 Firewall Update: Tables for Two
+
+![Firewalls](../Event/NICE33.png)
 
 ## Author
+```
 Edna J.
 WGU NICE Challenge
 Pretty Safe Electronics
 9/4/2021
+```
 
 ## Challenge Details
-
+```
+Author: James Block
+Framework Category: Protect and Defend
+Specialty Area: Cybersecurity Defense Infrastructure Support
+Work Role: Cyber Defense Infrastructure Support Specialist
+Task Description: Perform system administration on specialized cyber defense applications and systems (e.g., antivirus, audit and remediation) or Virtual Private Network (VPN) devices, to include installation, configuration, maintenance, backup, and restoration. (T0180) 
+```
 
 ### Scenario
-
+The way firewalls in Linux are implemented is changing. We need you to make sure our Linux boxes are keeping up with those changes so that we don't create any problems for ourselves in the future.
 
 -----
 ## Meeting Briefing
