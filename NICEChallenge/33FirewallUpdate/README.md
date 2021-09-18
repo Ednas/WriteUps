@@ -156,7 +156,6 @@ Enable nftables
 `systemctl enable nftables.service`
 
 
-
 ## Task 4 Filter traffic correctly on Fileshare
 
 
@@ -171,8 +170,12 @@ Enable nftables
 
 ## References:
 Syslog watcher https://ezfive.com/syslog-watcher/
+
 How to Remotely Collect server events using syslog
 https://www.howtogeek.com/107069/how-to-remotely-collect-server-events-using-syslog/
+
+Logging traffic nftables
+https://wiki.nftables.org/wiki-nftables/index.php/Logging_traffic
 
 Uninstall iptables https://www.cyberciti.biz/faq/linux-howto-disable-remove-firewall/
 
