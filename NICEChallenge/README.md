@@ -50,8 +50,11 @@ Below are my Write ups from some of the labs that I have completed.
 ![Systems Security Analyst: Crash Course](./Event/NICE34.png)
 [34 Systems Security Analyst: Crash Course](./34SystemsSecurity/README.md)
 
-![Incoming Zero Day!: Prepare the IDS/IPS!](./Event/NICE35.png)
-[35 Incoming Zero Day!: Prepare the IDS/IPS!](./35IncomingZeroDay/README.md)
+![ Security Begins & Never Ends with Updates: Networking Edition](./Event/NICE35.png)
+[35 Security Begins & Never Ends with Updates: Networking Edition](./35SecurityBegins/README.md)
+
+![Incoming Zero Day!: Prepare the IDS/IPS!](./Event/NICE36.png)
+[36 Incoming Zero Day!: Prepare the IDS/IPS!](./36IncomingZeroDay/README.md)
 
 ### WGU NICE Cyber Challenges Schedule 
 May - September 2021
