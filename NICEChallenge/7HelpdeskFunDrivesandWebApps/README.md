@@ -1,5 +1,7 @@
 # Challenge 7  Helpdesk Fun: Disappearing Drives & Web Apps
 
+![Executable](../Event/NICE7.png)
+
 ## Author
     Edna J.
     WGU NICE Challenge
@@ -60,23 +62,61 @@ We currently host both LedgerSMB and DasWebsWiki on the Backup machine. DasWebsW
 Starting off, I have the following machines available for me to access and checks left to complete
 
 ![VMsAvailable](./images/VMs-available.PNG)
-
+![Checks](./images/Checks.PNG)
 I was given the following Network diagram map
 
 ![OM-map](./images/OM2-map.jpg)
 
 #### The tasks that I was working on completing were
- - List item 1
- - List item 2
- - List item 3
-
-
-### Task 1 Heading
-
-### Task 2 Heading
+ - Network Share Mapped
+ - LedgerSMB and DasWebsWiki Accessible
 
 
 
+### Task 1 Network Share Mapped
+
+During the meeting Gary Bates told me "Sergio is having some major problems with the network share he uses called 'HR' with a drive letter of R. Because of his 'fiddling' the drive no longer shows up at all. Furthermore, @schanel is also having problems with LedgerSMB; he can't access the web interface anymore." Based on that information I considered going in to create a group policy for mapping this drive, but then decided to go ahead and only map it for Sergio for now.
+
+![WorkStation](./images/Workstation.PNG)
+
+I logged into Sergio's workstation. I opened the file explorer and navigated to the network drive, I found the FILESHARE and within it the hr share. 
+I right clicked and selected the Drive R to map to this File share. I left the "Reconnect at sign-in" check and clicked Finish. This allowed Sergio's drive to be mapped to R again.
+![WorkStation](./images/WorkstationMaptoR.PNG)
+
+An alternate method of doing this mapping is to open up command prompt as Administrator, then type the following command:
+net use R: \\fileshare\hr
+
+### Task 2 	LedgerSMB and DasWebsWiki Accessible
+
+From my meeting earlier today, Gary Bates said "We currently host both LedgerSMB and DasWebsWiki on the Backup machine. DasWebsWiki was configured first and must be accessible on port 80, while LedgerSMB should be accessible on port 8080." 
+
+My first step was to log in to the Backup machine. I ran the command Systemctl to find out which processes were running. This led me to discover that starman-ledgersmb.service had failed. I decided to try and restart that service.
+
+![SystemCTL](./images/SystemCTLBackUp.PNG)
+
+I attemepted several times to restart the Starman LedgerSMB service and logging in with the available accounts. Brute forcing my way in was not working! Oh no!
+
+![SystemCTLStart](./images/SystemCTLStartAttempt.PNG)
+
+I decided to go look for a web service that was running and looking into the possibility of a configuration issue. I checked for httpd, http, www folders, nothing... finally aha! Apache2 is installed!
+
+![FindingApache](./images/BackupFindApache.PNG)
+
+I got into the Apache2 folder, I discovered a folder called sites-available. In there was a ledgersmb.conf file. I looked at that file and found a misconfiguration.
+![Apache2](./images/InsideApache2.PNG)
+
+I edited the ledgersmb.conf file, using the command `sudo vim ledgersmb.conf` and changed all instances of port 80 to port 8080.
+
+![LedgerSMB.conf](./images/ledgersmbDotConFile.PNG)
+
+Now that I've made the changes, I need to restart the Apache2 server.
+
+I run the command `sudo /etc/init.d/apache2 restart`
+![RestartApache2](./images/RestartApache2Server.PNG)
+
+Everything restarted OK. I go and find that my checks have gone green.
+
+![Checks](./images/CheckMarks.PNG)
 
 (Get this info before deploying challenge or after)
 ### NICE Framework KSA
