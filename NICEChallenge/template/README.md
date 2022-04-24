@@ -36,7 +36,7 @@ Starting off, I have the following machines available for me to access and check
 
 I was given the following Network diagram map
 
-![OM-map](./images/OM-map.jpg)
+![OM-map](./images/OM2-map.jpg)
 
 #### The tasks that I was working on completing were
  - List item 1
