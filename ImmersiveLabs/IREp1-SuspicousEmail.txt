@@ -1,0 +1,27 @@
+Tasks
+Use oletools or other command line tools to analyse the email message.
+Use Google to self-research.
+Question 1 of 3
+What is the malicious actor’s mail server IP address?
+52.214.177.125
+
+Question 2 of 3
+What is the malicious actor’s fully qualified domain name (FQDN) used in the email?
+mail.iml-bank.info
+
+Question 3 of 3
+What is the malicious actor’s apparent email address?
+postmaster@iml-bank.info
+
+python ~/Desktop/oledump/oledump.py -s 27 -t utf16 Mail-Delivery-Failure-Returning-Message-To-Sender.msg
+
+Left hand column is string number
+Middle column is size of the string
+Next is point in the file the stream starts in.
+
+By looking at the screen, Section 27 is the largest.
+That would be the first one to look at for the header information.
+9.2 kb for a header is about right.
+
+UTF16 is unicode
+-t translates it to Unicode once you zone into the right section

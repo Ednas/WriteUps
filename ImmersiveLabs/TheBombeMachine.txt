@@ -1,0 +1,32 @@
+Use CyberChef to simulate the Bombe and Enigma machines.
+Decrypt the 'Encrypted message' in the scenario section of the info panel.
+Question 1 of 6
+How many Bombe machines were built throughout the war?
+211
+Your answer to question 1 isCorrect
+Question 2 of 6
+How many Enigma messages would be intercepted and deciphered each day?
+
+2000-3000
+
+4000-5000
+
+3000-5000
+Your answer to question 2 isCorrect
+Question 3 of 6
+What is the name given to the known sample of text used by the Bombe to help decipher messages?
+crib
+Your answer to question 3 isCorrect
+Question 4 of 6
+How many Enigma machines are equivalent to a single Bombe machine?
+36
+Your answer to question 4 isCorrect
+Question 5 of 6
+Approximately how many positions do the Bombe rotors pass through until the machine finds a match?
+17500
+Your answer to question 5 isCorrect
+Question 6 of 6
+Decrypt the 'Encrypted message'. What is the output returned?
+TODAY SWEAT HERRE PORTI SSTOR MYONT HEBEA CHES
+
+

