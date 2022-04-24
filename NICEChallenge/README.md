@@ -14,6 +14,13 @@ Below are my Write ups from some of the labs that I have completed.
 
 ## Lab Write ups 
 
+
+![Executable](./Event/NICE7.png)
+[7  Helpdesk Fun: Disappearing Drives & Web Apps](./7HelpdeskFunDrivesandWebApps/README.md)
+
+![LengthyLogs](./Event/NICE8.png)
+[8 Lengthy Logs: Attack Analysis](./8LengthyLogsAttackAnalysis/README.md)
+
 [17 Interns & HR on the Domain Controller](./17InternsAndHROnTheDomainController/README.md)
 
 [18 Linux Administration](./18LinuxAdministration201/README.md)
