@@ -69,9 +69,9 @@ Oh yeah! I forgot about that thing. Well there you go @playerone, if you find an
 ---
 ## Tools used
 
- - List item 1
- - List item 2
- - List item 3
+ - PowerShell
+ - SCP
+ - Notepad
 
 
 ## Steps taken to complete the required actions
@@ -92,18 +92,89 @@ I was given the following Network diagram map
 
 ### Task 1 Correctly Reported Exploited Host and Service
 
+Starting off I navigate to the Database machine (172.16.20.4) and navigate to the folder C:\mysql_logs\ to view the mysql.log file that is on this machine. I don't have a tool installed here to easily view the file, so at first I have a messy text file, that I open with Notepad. 
+
+![MySQLLog](./images/MysqlLog.PNG)
+
+Next I tried to use PowerShell to better view the log entries. I execute `Select-String -Path C:\mysql_logs\mysql.log -Pattern "Query" and have what seems like a thousand lines displayed. At least it's a bit more organized now. 
+
+![PSQuery](./images/PowershellQuery.PNG)
+
 ### Task 2 Correctly Reported Exploited Service Log File Path
+
+The logs were found exactly as briefed in the meeting at C:\mysql_logs\mysql.log on the Database server.
 
 ### Task 3 Correctly Reported Wordpress Account[s] Subjected to Tampering 
 
+I was able to find the backup for the WordPress site located on the Backup machine (172.16.30.79).
+
+I decided to bring the Wordpress.SQL file over to the Security Desk (172.16.30.6) to further examine it. I located the file in DatabaseBackup/wordpress.sql. Then I executed `scp ./wordpress.sql playerone@172.16.30.6:~/wordpress.sql`
+![SCP](./images/BackupSCPCommand.PNG)
+
+Logging into the Security Desk, I quickly found the backup file. I did a couple of grep statements, by using `grep nickname ./wordpress.sql` I was able to find all of the accounts that existed before the breach. 
+I noted that the accounts listed were `(1,1,'nickname','playerone')`, `(23,2,'nickname','admin')`, `(41,3,'nickname','gbates')`, and `(55,4,'nickname','takasaka')`
+![Nicknames](./images/SecurityDeskWordpressNickname.PNG)
+
+The accounts that were tampered with were playerone, admin, gbates, and takasaka. These were all of the accounts that were on the backup copy, the copy which had not been affected by the breach.
+
+
+### Form Submission
+After completing all of the required steps, I filled out the Incident Response form that was located at http://172.16.30.79 I logged in using my player credentials and filled out the form as follows.
+
+1. Which sytem was breached: **Database**
+2. Which service was compromised: **mysql**
+3. Full Path to log file: **C:\mysql_logs\mysql.log**
+3. Which user accounts were tampered with: **playerone, admin, gbates, takasaka**
+
+![IRSubmission](./images/IRFormResultsPage1.PNG)
+<hr></hr>
+
+#### Describe how the system was breached:
+There was a vulnerability that affected this system, it was reported in CVE-2021-24750. 
+
+![CVE](./images/CVEInfo.PNG)
+This is a recently published vulnerability dating from December of last year. It shows that there was an improper neutralization of special elements used in an SQL Command, known as a SQL Injection. I was able to find evidence of this where the attackers were using a know SQL Injection format of "WHERE 1=1" in the logs.
+
+![Where1](./images/PowerShellWhere1is1.PNG)
+
+
+#### How could this incident have been prevented:
+The WordPress plugin called WP Visitor Statistics 4.7 does not properly sanitise and escape the refUrl in the refDetails AJAX action,
+available to any authenticated user, which could allow users with a role as low as
+subscriber to perform SQL injection attacks.
+You can test if your site is affected by utilizing this exploit tool for testing (https://github.com/Hacker5preme/Exploits/tree/main/Wordpress/CVE-2021-24750)
+
+In your coding practices, you need to verify that you are sanitising your code and preventing SQL injections. If you are relying on outside tools, such as WordPress plugins, you need to test if these plugins are vulnerable to SQL injections, if you're not able to do it yourself, you can hire a web application penetration tester to do it for you.
+
+#### Recommended course of action after incident occured:
+My recommendation is to preserve all logs and information regarding this incident.
+Until the plugin is patched, I recommend uninstalling the plugin. I recommend hiring a Web Application Security tester to make sure that there are not any other currently unknown vulnerabilities on the website. 
+I recommend restoring the website from the backup copy, that is located on Backup (172.16.30.79), then changing all users passwords and adding multi factor authentication.  
 
 
 
 ### NICE Framework KSA
-
+    K0004. Knowledge of cybersecurity and privacy principles.
+    K0005. Knowledge of cyber threats and vulnerabilities.
+    K0042. Knowledge of incident response and handling methodologies.
+    K0044. Knowledge of cybersecurity and privacy principles and organizational requirements (relevant to confidentiality, integrity, availability, authentication, non-repudiation).
+    K0060. Knowledge of operating systems.
+    K0070. Knowledge of system and application security threats and vulnerabilities (e.g., buffer overflow, mobile code, cross-site scripting, Procedural Language/Structured Query Language [PL/SQL] and injections, race conditions, covert channel, replay, return-oriented attacks, malicious code).
+    K0161. Knowledge of different classes of attacks (e.g., passive, active, insider, close-in, distribution attacks).
+    K0167. Knowledge of system administration, network, and operating system hardening techniques.
+    K0192. Knowledge of Windows/Unix ports and services.
+    K0297. Knowledge of countermeasure design for identified security risks.
+    K0318. Knowledge of operating system command-line tools.
 
 ### CAE Knowledge Units
-
+    Cybersecurity Foundations
+    Cybersecurity Principles
+    Cyber Threats
+    Operating Systems Administration
+    Operating Systems Concepts
+    Vulnerability Analysis
 
 ## References:
+SQL Injection Cheat sheet - https://www.invicti.com/blog/web-security/sql-injection-cheat-sheet/
 
+CVE-2021-24750 - https://nvd.nist.gov/vuln/detail/CVE-2021-24750
